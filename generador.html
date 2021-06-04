@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Generador de claves</title>
+  <link rel="stylesheet" href="genstyle.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+	<h2 class="title">Generador de Claves</h2>
+	<div class="result">
+		<div class="result__title field-title">Clave Generada</div>
+		<div class="result__info right">click para copiar</div>
+		<div class="result__info left">copiada</div>
+		<div class="result__viewbox" id="result">HAZ CLICK  EN GENERAR</div>
+		<button id="copy-btn" style="--x: 0; --y: 0"><i class="far fa-copy"></i></button>
+	</div>
+	<div class="length range__slider" data-min="4" data-max="32">
+		<div class="length__title field-title" data-length='0'>longitud:</div>
+		<input id="slider" type="range" min="4" max="32" value="16" />
+	</div>
+
+	<div class="settings">
+		<span class="settings__title field-title">OPCIONES</span>
+		<div class="setting">
+			<input type="checkbox" id="uppercase" checked />
+			<label for="uppercase">Incluir Mayúsculas</label>
+		</div>
+		<div class="setting">
+			<input type="checkbox" id="lowercase" checked />
+			<label for="lowercase">Incluir Minúsculas</label>
+		</div>
+		<div class="setting">
+			<input type="checkbox" id="number" checked />
+			<label for="number">Incluir Números</label>
+		</div>
+		<div class="setting">
+			<input type="checkbox" id="symbol" />
+			<label for="symbol">Incluir Símbolos</label>
+		</div>
+	</div>
+
+	<button class="btn generate" id="generate">Generar Clave</button>
+	 
+	<button class="btn generate" id="cifrador" onclick="window.location.href='https://laxetas.github.io/llaves/'">Ir al cifrador</button>
+</div>
+
+
+
+
+<script  src="script.js"></script>
+
+</body>
+</html>
